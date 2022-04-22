@@ -1,8 +1,17 @@
+//using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 
+// builder.Services.AddDbContext<CategoryContext>(options =>
+//     options.UseSqlite(builder.Configuration.GetConnectionString("CategoryContext") ?? throw new InvalidOperationException("Connection string 'CategoryContext' not found.")));
+
+
+builder.Services.AddDbContext<CategoryContext>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("CategoryContext")));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

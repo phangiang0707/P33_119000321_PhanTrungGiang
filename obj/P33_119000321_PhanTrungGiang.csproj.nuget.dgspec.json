@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "D:\\P33_119000321_PhanTrungGiang\\P33_119000321_PhanTrungGiang\\P33_119000321_PhanTrungGiang.csproj": {}
+    "D:\\P33_119000321_PhanTrungGiang\\P33_119000321_PhanTrungGiang.csproj": {}
   },
   "projects": {
-    "D:\\P33_119000321_PhanTrungGiang\\P33_119000321_PhanTrungGiang\\P33_119000321_PhanTrungGiang.csproj": {
+    "D:\\P33_119000321_PhanTrungGiang\\P33_119000321_PhanTrungGiang.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\P33_119000321_PhanTrungGiang\\P33_119000321_PhanTrungGiang\\P33_119000321_PhanTrungGiang.csproj",
+        "projectUniqueName": "D:\\P33_119000321_PhanTrungGiang\\P33_119000321_PhanTrungGiang.csproj",
         "projectName": "P33_119000321_PhanTrungGiang",
-        "projectPath": "D:\\P33_119000321_PhanTrungGiang\\P33_119000321_PhanTrungGiang\\P33_119000321_PhanTrungGiang.csproj",
-        "packagesPath": "C:\\Users\\PDH\\.nuget\\packages\\",
-        "outputPath": "D:\\P33_119000321_PhanTrungGiang\\P33_119000321_PhanTrungGiang\\obj\\",
+        "projectPath": "D:\\P33_119000321_PhanTrungGiang\\P33_119000321_PhanTrungGiang.csproj",
+        "packagesPath": "C:\\Users\\a\\.nuget\\packages\\",
+        "outputPath": "D:\\P33_119000321_PhanTrungGiang\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\PDH\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\a\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -37,6 +43,26 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SQLite": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
